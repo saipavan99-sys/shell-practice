@@ -13,7 +13,7 @@ echo "Home Directory of the current script: $HOME"
 echo "PID of the current script: $$"
 sleep 10 &
 echo "PID of the command running in background now: $!" 
-Wait $! #script wait untill #! command complete
+wait $! #script wait untill #! command complete
 echo "Line number: $LINENO"
 echo "Previous command exit status: $?"
 echo "Total time taken for Executed for this script: $SECONDS"
