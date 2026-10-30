@@ -18,3 +18,4 @@ FRUITS=("apple" "banana" "pappaya") #this is called as "array" list of values
 
 echo "All fruits: ${FRUITS[@]}"
 echo "First Fruit: ${FRUITS[0]}"
+echo "Second Fruit: ${FRUITS[1]}"
