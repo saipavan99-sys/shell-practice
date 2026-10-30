@@ -13,10 +13,10 @@ echo "processing...."
 
 validate(){
      if [ $1 -ne 0 ]; then
-        echo "$2 is Faild...."
+        echo "$2 is FAILD...."
         exit 1
     else 
-        echo "$2 is sucess"
+        echo "$2 is SUCESS...."
     fi
 }
 
