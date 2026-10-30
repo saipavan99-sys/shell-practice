@@ -14,4 +14,4 @@ elif [ $marks -lt 75 ]; then
 else
   echo "Distinction"
 fi
-  echo "End"
+echo "End"
