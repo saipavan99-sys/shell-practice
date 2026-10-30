@@ -28,6 +28,6 @@ validate $? "Nginx installation"
 # my-sql installation
 
 dnf install mysql -y
-validate $? "Nginx installation"
+validate $? "my-sql installation"
 
 echo "still proceeded...."
