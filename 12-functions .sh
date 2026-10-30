@@ -22,12 +22,12 @@ validate(){
 
 # nginx installation
 
-dnf install nginx -y
+dnf install nginxx -y
 validate $? "Nginx installation"
 
 # my-sql installation
 
-dnf install mysql -y
+dnf install mysqll -y
 validate $? "my-sql installation"
 
 echo "still proceeded...."
