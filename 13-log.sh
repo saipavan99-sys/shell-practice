@@ -14,7 +14,7 @@ echo "processing...."
 
 mkdir -p $log_folder
 
-echo "script started execution at: ${date +"%F %T"}"
+echo "script started execution at: $(date +"%F %T")"
 
 #function
 
@@ -37,6 +37,6 @@ validate $? "Nginx installation"
 dnf install mysql -y &>> $log_file
 validate $? "my-sql installation"
 
-echo "script sexecution complete at: ${date +"%F %T"}"
+echo "script sexecution complete at: $(date +"%F %T")"
 
 echo "still proceeded...."/
