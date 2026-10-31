@@ -33,3 +33,5 @@ do
    dnf install ${package} -y &>> $log_file                         # installing packages and redirect logs to logfile
    validate $? "installing ${package}"
 done 
+
+echo "script sexecution complete at: $(date +"%F %T")" &>> $log_file
