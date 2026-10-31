@@ -10,11 +10,9 @@ if [ $user_id -ne 0 ]; then
   exit 1
 fi
 
-echo "processing...."
-
 mkdir -p $log_folder
 
-echo "script started execution at: $(date +"%F %T")"
+echo "script started execution at: $(date +"%F %T")" &>> $log_file
 
 #function
 
@@ -37,6 +35,6 @@ validate $? "Nginx installation"
 dnf install mysql -y &>> $log_file
 validate $? "my-sql installation"
 
-echo "script sexecution complete at: $(date +"%F %T")"
+echo "script sexecution complete at: $(date +"%F %T")" &>> $log_file
 
-echo "still proceeded...."/
+
