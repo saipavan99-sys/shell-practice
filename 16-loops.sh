@@ -35,7 +35,7 @@ do
      dnf install $package -y &>> $log_file                           # installing packages and redirect logs to logfile
      validate $? "installing ${package}"
   else
-     echo "${package} is already installed...SKIPPING"
+     echo "${package} is already installed...SKIPING"
    fi
 done 
 
