@@ -2,7 +2,7 @@
 
 log_folder="/var/log/shell-practice"
 log_file="${log_folder}/${0}.log"
-R="\e[31m"
+R="\e[31m"  #adding colours to specific words
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"   
@@ -22,10 +22,10 @@ echo "script started execution at: $(date +"%F %T")" &>> $log_file    #redirecti
 
 validate(){
      if [ $1 -ne 0 ]; then
-        echo -e "$2 is ${R}FAILED....${N}" | tee -a $log_file            #to print status on screen use tee cmd
+        echo -e "$2 is ${R}FAILED....${N}" | tee -a $log_file         #to print status on screen use tee cmd
         exit 1                                                        #exit status
     else 
-        echo -e "$2 is ${G}SUCCESS....${N}" | tee -a $log_file
+        echo -e "$2 is ${G}SUCCESS....${N}" | tee -a $log_file        # "-e" is to execute colours
     fi
 }
 
