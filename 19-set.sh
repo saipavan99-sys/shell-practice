@@ -8,7 +8,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"   
 
-trap 'echo "Error at $LINENO" , command: "BASH_COMMAND"' ERR
+trap 'echo "Error at Line NO: $LINENO" , command: "BASH_COMMAND"' ERR
 
 user_id=$(id -u)
 
