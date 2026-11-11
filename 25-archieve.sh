@@ -34,7 +34,7 @@ fi
 echo "Scanning file olderthan $days in $source_dir"
 files_to_archieve=$(find "*.log" -name $source_dir -type f -mtime +$days)
 
-if [ -z "$ffiles_to_archieve" ];then
+if [ -z "$files_to_archieve" ];then
    echo "No log files found olderthan $days"
    exitt 0
 fi
@@ -55,6 +55,6 @@ else
       echo "file is going to bo deleted: $line"
       rm -f $line                                # -f for force to delete
       echo "File deleted: $line"
-  done <<< "$files_to_delete"
+  done <<< "$files_to_archieve"
 fi
 
