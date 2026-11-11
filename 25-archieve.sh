@@ -10,7 +10,7 @@ dest_dir=$2
 days=${3:-14} #if user not passing days,we will take it 14 days as default
 
 usage(){
-    echo -e "{R}USAGE:: $0 [SOURCE_DIR] [DEST_DIR] [days(optional,default to 14 days)${N}]"
+    echo -e "${R}USAGE:: $0 [SOURCE_DIR] [DEST_DIR] [days(optional,default to 14 days)${N}]"
     exit 1
 }
 
