@@ -32,7 +32,7 @@ fi
 
 
 echo "Scanning file olderthan $days in $source_dir"
-files_to_archieve=$(find "*.log" -name $source_dir -type f -mtime +$days)
+files_to_archieve=$(find $source_dir -name "*.log" -type f -mtime +$days)
 
 if [ -z "$files_to_archieve" ];then
    echo "No log files found olderthan $days"
