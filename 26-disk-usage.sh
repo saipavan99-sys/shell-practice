@@ -9,7 +9,7 @@ do
    usage=$(echo $line | awk '{print $6}' | cut -d "%" -f1)
    partition=$(echo $line | awk '{print $7}')
    if [ "$usage" -ge "$usage_threshold" ]; then # (-ge) greaterthan or equaltoo
-       massage+="High disk usage in $partition: $usage \n" # + add with previous massage not over write; (\n) for new line
+        message+="High Disk Usage on $partition: $usage <br>" # + add with previous massage not over write; (\n) for new line
    fi
 done <<< "$disk_usage"
 
